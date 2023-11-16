@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="document.css">
+  <title>FLCorp. Documents</title>
+</head>
+<body>
+  <header>
+    <h1>Écris ton documents et enregistre le!</h1>
+    <button><a href="index.html">Accueil</a></button>
+    <button id="newDocumentBtn">Nouveau Document</button>
+    <button id="downloadTextBtn">Sauvegarder le Fichier</button>
+  </header>
+  <div id="editor-container">
+    <div id="toolbar">
+      <h1>Outils d'écriture</h1>
+      <button onclick="insertPropositionProjet()">Proposition de Projet</button>
+      <button onclick="insertProjectName()">Nom du Projet</button>
+      <button onclick="insertType()">Type du Projet</button>
+      <button onclick="insertSynopsis()">Synopsis</button>
+    </div>
+    <div id="editor" contenteditable="true"></div>
+    <h1>
+        Lorsque tu enregistres ton documents, il est enregistrer en tant que fichier texte (.txt)<br>
+        Alors on te conseil d'aller sur <a href="https://convertio.co/fr/txt-pdf/" target="_blank" class="link">Convertio</a> pour le convertir en fichier PDF!
+    </h1>
+  </div>
+  <script src="script.js"></script>
+  <script src="preset-buttons.js"></script>
+  <script src="save-system.js"></script>
+</body>
+</html>
